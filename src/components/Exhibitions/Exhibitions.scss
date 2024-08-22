@@ -1,0 +1,43 @@
+.exhibitions {
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    padding: 60px;
+    margin: auto;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+    li:first-child {
+        padding-top: 0;
+    }
+
+  }
+
+  .heading {
+    margin: auto;
+  }
+
+  .left-block,
+  .right-block {
+    width: 50%;
+  }
+
+  .right-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-block > img {
+    min-width: 400px;
+  }
+
+  .block-wrapper {
+    display: flex;
+  }
+}

@@ -1,0 +1,44 @@
+@media (max-width: 1024px) {
+  .DesktopNavigation {
+    display: none;
+  }
+
+  .MobileNavigation {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .NavLinks {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .NavLinks > li {
+    border-bottom: 1px solid lightgrey;
+  }
+}
+
+@media (min-width: 1024px) {
+  .DesktopNavigation {
+    display: block;
+  }
+
+  .MobileNavigation {
+    display: none;
+  }
+}

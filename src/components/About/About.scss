@@ -1,0 +1,18 @@
+.left-block,
+.right-block {
+    width: 50%;
+}
+
+.right-block img{
+    min-width: 400px;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-block {
+    padding: 0 40px;
+}
