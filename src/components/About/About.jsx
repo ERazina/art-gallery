@@ -8,6 +8,7 @@ function About() {
     <div className="about">
       <div className="left-block">
         <h2>О художнике</h2>
+        <img className="mobile_me" src="./me.jpg" alt="" />
         <p>Приветствую вас!</p>
         <p>
           Меня зовут Светлана, и я художник, который стремится передать всю
