@@ -31,7 +31,7 @@ function About() {
           prints or just to say hello, please send Svetlana an email at
           s.vento85@gmail.com
         </p>
-        <p>s.vento85@gmail.com / (+7)9045126424</p>
+        <p>s.vento85@gmail.com</p>
 
         {/* <img src="./IMG_9063_1.jpg" alt="" /> */}
         {/* <img src="./IMG_9063_1.jpg" alt="" /> */}

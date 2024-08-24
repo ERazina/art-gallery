@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaBehance } from "react-icons/fa";
 // import { useTranslation } from "react-i18next";
 // import UseLocalStorage from "../../hooks/UseLocalStorage";
+import { FaTelegram } from "react-icons/fa6";
+import { PiTelegramLogo } from "react-icons/pi";
 
 import "./Footer.scss";
 
@@ -25,13 +27,13 @@ function Home() {
         </div>
         <div className="footer-social">
           <a
-            href="https://www.facebook.com/Svetlana.Lebedeva.art"
+            href="https://t.me/@SLebedeva8"
             target="_blank"
-            alt="link to facebook account of Svetlana Lebedeva art"
+            alt="link to telegram account of Svetlana Lebedeva art"
             className="footer-social__link"
             rel="noreferrer"
           >
-            <FaFacebookF />
+            <PiTelegramLogo />
           </a>
           <a
             href="https://www.instagram.com/svetlana.lebedeva.art"
@@ -41,15 +43,6 @@ function Home() {
             rel="noreferrer"
           >
             <FaInstagram />
-          </a>
-          <a
-            href="https://www.behance.net/Slart"
-            target="_blank"
-            alt="behanse account of Svetlana Lebedeva Art"
-            className="footer-social__link"
-            rel="noreferrer"
-          >
-            <FaBehance />
           </a>
           {/* <a
             href="https://vk.com/slebedeva8"

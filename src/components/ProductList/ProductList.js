@@ -64,6 +64,7 @@ function ProductList() {
                     src={product.images[0]}
                     alt={product.title}
                     id={product.id}
+                    loading="lazy"
                   />
                   {/* Название (изначально скрытое) */}
                   <div className="productTitle">
