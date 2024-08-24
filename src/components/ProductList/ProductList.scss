@@ -1,8 +1,9 @@
 .productList_wrapper {
-  padding: 36px;
   display: grid;
   justify-content: center;
-  grid-gap: 36px;
+  padding: 0 100px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .image {
@@ -60,21 +61,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    color: #7d7d7d;
+    color: #969696;
     text-align: center;
     z-index: 2;
+    font-weight: 100;
   }
 
-  .productPrice{
-    // transform: translate(-50%, -50%);
+  .productPrice {
     display: none;
-    font-size: 16px;
-    // font-weight: bold;
-    color: #7d7d7d;
+    font-size: 14px;
+    color: #969696;
     text-align: center;
     z-index: 2;
+    font-weight: 100;
   }
 
   &:hover {
@@ -82,10 +83,10 @@
       opacity: 0; // Скрываем изображение при наведении
     }
 
-    .productTitle, .productPrice {
+    .productTitle,
+    .productPrice {
       display: block; // Показываем текст
     }
-
   }
 }
 

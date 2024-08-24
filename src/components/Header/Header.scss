@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px !important;
+  color: #969696 !important;
+}
+
+
 .header{
   background-color: white;
-  // height: 40px;
+  margin: 10px auto;
+  padding: 100px 100px 0;
+  max-width: 1100px;
 
   .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
   }
 }
 
@@ -24,11 +36,16 @@ li {
 }
 
 .link {
-  color: #2d2d2d;;
+  font-size: 14px;
+  line-height: 28px;
+  // color: #2d2d2d;
+  color: #bfbfbf;
   text-decoration: none;
   cursor: pointer;
+  padding: 37.5px 0;
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #969696;
 }

@@ -12,10 +12,10 @@ function Header() {
           <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-              isPending ? "pending link" : isActive ? "active link" : "link"
+              isPending ? "pending link" : isActive ? "active link allura-regular" : "link allura-regular"
             }
           >
-            SL
+            Svetlana Lebedeva
           </NavLink>
         </div>
         <Nav />

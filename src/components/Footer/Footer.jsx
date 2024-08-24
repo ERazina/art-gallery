@@ -12,12 +12,12 @@ function Home() {
     <div className="footer">
       <div className="footer-wrapper">
         <div className="footer-content-wrapper">
-          <div>© SL. ART 2021</div>
+          <div>© Svetlana Lebedeva 2024</div>
           Developed by 
           <a
             href="https://vk.com/razina_elina"
             target="_blank"
-            className="footer-dev-link"
+            className="footer-dev-link allura"
             rel="noreferrer"
           >
              Elina Razina

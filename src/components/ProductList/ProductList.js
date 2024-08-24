@@ -25,7 +25,7 @@ function ProductList() {
   return (
     <div className="productList">
       <div className="productList_wrapper">
-        <div className="filter_wrapper">
+        {/* <div className="filter_wrapper">
           <button className="btn" onClick={() => setGenreFilter("all")}>
             Все
           </button>
@@ -41,7 +41,7 @@ function ProductList() {
           <button className="btn" onClick={() => setGenreFilter("портрет")}>
             Портрет
           </button>
-        </div>
+        </div> */}
 
         <div
           className="productList"
@@ -71,7 +71,7 @@ function ProductList() {
                       {product.title.toUpperCase()}
                     </div>
                     <div className="price">
-                      {product.width} * {product.height}
+                     H:{product.height} * W:{product.width}
                     </div>
                   </div>
                 </Link>

@@ -29,7 +29,7 @@ function MobileNav() {
             {"о художнике".toUpperCase()}
           </NavLink>
         </li>
-        <li onClick={() => setIsVisible(false)}>
+        {/* <li onClick={() => setIsVisible(false)}>
           <NavLink
             to="/gallery"
             className={({ isActive, isPending }) =>
@@ -38,7 +38,7 @@ function MobileNav() {
           >
             ГАЛЕРЕЯ
           </NavLink>
-        </li>
+        </li> */}
         <li onClick={() => setIsVisible(false)}>
           <NavLink
             to="/exhibitions"

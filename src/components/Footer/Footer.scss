@@ -1,16 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
 .footer {
-    // position: absolute;
-  margin-top: 40px;
+  margin: 10px auto;
+  padding: 100px 100px 0;
+  max-width: 1100px;
   bottom: 0;
-  max-width: 100%;
-  padding: 0 40px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bfbfbf;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 37.5px 0;
 
   &-wrapper {
     display: flex;
     align-items: center;
     height: 50px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   &-dev-link {
@@ -25,7 +32,7 @@
       width: 30px;
       height: 30px;
       margin-left: 4px;
-      background-color: rgb(48, 48, 48);
+      background-color: #bfbfbf;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -33,44 +40,46 @@
     }
 
     &__link > svg {
-      fill: white;
+      fill: #ffffff;
     }
-
 
     &__link:hover {
-      background: #ea4c89;
-      
-      &__link > svg path {
-        fill: #ea4c89;
-      }
+      background-color: #969696;
     }
+  }
+
+  .allura {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px !important;
+    color: #969696 !important;
+    text-decoration: none;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .footer {
-    // position: absolute;
-  margin-top: 20px;
-  bottom: 0;
-  max-width: 100%;
-  padding: 0 20px;
+    margin-top: 20px;
+    bottom: 0;
+    max-width: 100%;
+    padding: 0 20px;
   }
 
-  .footer-content-wrapper{
+  .footer-content-wrapper {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 425px) and  (max-width: 768px)  {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .footer {
-    // position: absolute;
-  margin-top: 20px;
-  bottom: 0;
-  max-width: 100%;
-  padding: 0 20px;
+    margin-top: 20px;
+    bottom: 0;
+    max-width: 100%;
+    padding: 0 20px;
   }
 
-  .footer-content-wrapper{
+  .footer-content-wrapper {
     font-size: 16px;
   }
 }
