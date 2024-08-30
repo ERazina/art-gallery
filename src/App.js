@@ -10,6 +10,7 @@ import Exhibitions from "./components/Exhibitions/Exhibitions";
 import Delivery from "./components/Delivery/Delivery";
 import Contact from "./components/Contact/Contact";
 import Main from "./components/Main/Main";
+import Sea from './components/Sea/Sea'
 import "./App.css";
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<ProductList />} />
             {/* <Route path="/gallery" element={<ProductList />} /> */}
             <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/sea" element={<Sea />} />
             <Route path="/about" element={<About />} />
             <Route path="/exhibitions" element={<Exhibitions />} />
             <Route path="/delivery" element={<Delivery />} />

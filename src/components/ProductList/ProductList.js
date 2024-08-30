@@ -45,11 +45,6 @@ function ProductList() {
 
         <div
           className="productList"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(5, 1fr)",
-            justifyContent: "center",
-          }}
         >
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (

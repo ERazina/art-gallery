@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { products } from "../../data/products";
 import "./Nav.scss";
 
 function Nav() {
-
   const [genreFilter, setGenreFilter] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState(products);
 
@@ -26,7 +25,6 @@ function Nav() {
   return (
     <nav className="desktopNav">
       <ul>
-        {/* <li><button className="button" onClick={setGenreFilter}>МОРЕ</button></li> */}
         <li>
           <NavLink
             to="/about"
@@ -34,7 +32,57 @@ function Nav() {
               isPending ? "pending link" : isActive ? "active link" : "link"
             }
           >
-            {"About".toUpperCase()}
+            ABOUT
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/exhibitions"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            EXHIBITIONS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/sea"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            SEA
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/abstaction"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            ABSTACTION
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/landscape"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            LANDSCAPE
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/portrait"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            PORTRAIT
           </NavLink>
         </li>
         {/* <li>
@@ -49,16 +97,6 @@ function Nav() {
         </li> */}
         <li>
           <NavLink
-            to="/exhibitions"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending link" : isActive ? "active link" : "link"
-            }
-          >
-            EXHIBITIONS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to="/contacts"
             className={({ isActive, isPending }) =>
               isPending ? "pending link" : isActive ? "active link" : "link"
@@ -67,17 +105,6 @@ function Nav() {
             CONTACTS
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink
-            to="/delivery"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending link" : isActive ? "active link" : "link"
-            }
-          >
-            {"оплата и доставка".toUpperCase()}
-          </NavLink>
-        </li> */}
-
       </ul>
     </nav>
   );

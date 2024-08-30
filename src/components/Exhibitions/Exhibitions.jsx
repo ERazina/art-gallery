@@ -3,7 +3,7 @@ import "./Exhibitions.scss";
 const exhibitionsList = [
   {
     year: 2020,
-    name: "Мосты",
+    name: "Bridges",
     place: "Санкт-Петербург, Россия",
   },
   {
@@ -134,18 +134,7 @@ function Exhibitions() {
   return (
     <div className="exhibitions">
       <div className="block-wrapper">
-        <div className="left-block">
-          <h2 className="heading">Выставки</h2>
-          <nav>
-            <ul>
-              {exhibitionsList.map((item) => (
-                <li>
-                  {item.year} - {item.name} - {item.place}
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+      {/* <h2 className="heading">Exhibitions</h2> */}
         <div className="right-block">
         <img src="./exh-7.jpg" alt="" />
         <img src="./exh-6.jpg" alt="" />
@@ -166,6 +155,18 @@ function Exhibitions() {
           <img src="./IMG_7981.jpg" alt="" />
           <img src="./IMG_9058.jpg" alt="" />
           {/* <img src="./IMG_7981.jpg" alt="" /> */}
+        </div>
+        <div className="left-block">
+          <h2 className="heading">Exhibitions</h2>
+          <nav>
+            <ul>
+              {exhibitionsList.map((item) => (
+                <li>
+                  {item.year} - {item.name} - {item.place}
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

@@ -26,19 +26,9 @@ function MobileNav() {
               isPending ? "pending link" : isActive ? "active link" : "link"
             }
           >
-            {"о художнике".toUpperCase()}
+            ABOUT
           </NavLink>
         </li>
-        {/* <li onClick={() => setIsVisible(false)}>
-          <NavLink
-            to="/gallery"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending link" : isActive ? "active link" : "link"
-            }
-          >
-            ГАЛЕРЕЯ
-          </NavLink>
-        </li> */}
         <li onClick={() => setIsVisible(false)}>
           <NavLink
             to="/exhibitions"
@@ -46,7 +36,47 @@ function MobileNav() {
               isPending ? "pending link" : isActive ? "active link" : "link"
             }
           >
-            ВЫСТАВКИ
+            EXHIBITIONS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/sea"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            SEA
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/abstaction"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            ABSTACTION
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/landscape"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            LANDSCAPE
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/portrait"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            PORTRAIT
           </NavLink>
         </li>
         <li onClick={() => setIsVisible(false)}>
@@ -56,19 +86,9 @@ function MobileNav() {
               isPending ? "pending link" : isActive ? "active link" : "link"
             }
           >
-            КОНТАКТЫ
+            CONTACTS
           </NavLink>
         </li>
-        {/* <li onClick={() => setIsVisible(false)}>
-          <NavLink
-            to="/delivery"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending link" : isActive ? "active link" : "link"
-            }
-          >
-            {"оплата и доставка".toUpperCase()}
-          </NavLink>
-        </li> */}
       </ul>
     </nav>
   );

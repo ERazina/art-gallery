@@ -1,50 +1,124 @@
-.left-block,
-.right-block {
-  width: 50%;
-}
+@media (max-width: 752px) {
+  .left-block {
+    width: 100%;
+    padding: 20px;
+  }
+  .right-block {
+    width: 100%;
+  }
 
-.about {
-  display: flex;
-  flex-direction: row;
-  padding: 0 100px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px;
+    margin: 0 auto;
+  }
 
-.left-block {
   .portrait-wrapper {
-    line-height: 0;
-    text-align: center;
+    width: 100%; /* Ширина контейнера растягивается по доступному пространству */
+    padding-top: 100%; /* Создает квадратный контейнер с соотношением 1:1 */
     position: relative;
-    overflow: hidden;
-    width: 400px;
-    height: 400px;
-    padding: 0 17px;
+  }
+  .portrait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 32% 50%;
+    // border-radius: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 753px) and (max-width: 1024px) {
+  .left-block,
+  .right-block {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .about {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    // max-width: 1100px;
+    margin: 0 auto;
+  }
+  .portrait-wrapper {
+    width: 100%;
+    padding-top: 100%; /* Создает квадратный контейнер с соотношением 1:1 */
+    position: relative;
   }
 
   .portrait {
-    display: block;
-    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     object-position: 32% 50%;
-    filter: grayscale(0);
   }
 }
 
-.right-block {
-    p {
-        margin: none;
-        font-weight: normal;
-        font-size: 12px;
-        font-weight: 300;
-        font-style: normal;
-        line-height: 1.6em;
-        font-size: 18px;
-        text-transform: none;
-        text-decoration: none;
-        margin: 0 0 1em;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-    }
+@media (min-width: 1025px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 20px;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 1100px;
+  }
+  .left-block {
+    width: 40%;
+    box-sizing: border-box;
+  }
+  .right-block {
+    width: 60%;
+  }
+
 }
+
+// common styles
+
+.right-block {
+  p {
+    margin: none;
+    font-weight: normal;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 18px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0 0 1em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+
+.email-link {
+  font-size: 18px;
+  color: violet;
+}
+
+.portrait-wrapper {
+    width: 100%;
+    padding-top: 100%; /* Создает квадратный контейнер с соотношением 1:1 */
+    position: relative;
+  }
+
+  .portrait {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 32% 50%;
+  }
