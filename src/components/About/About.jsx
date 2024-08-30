@@ -28,13 +28,19 @@ function About() {
           trends in the art world.
         </p>
         <p>
-          Each painting by Svetlana is an invitation to her creative
-          world, where the viewer can experience an emotional journey and feel
-          the moments captured on canvas.
+          Each painting by Svetlana is an invitation to her creative world,
+          where the viewer can experience an emotional journey and feel the
+          moments captured on canvas.
         </p>
         <p>
-          To order a painting or discuss cooperation or just to say hello, please
-          send Svetlana an email to <a href="mailto:s.vento85@gmail.com" className="email-link">s.vento85@gmail.com</a>
+          To order a painting or discuss cooperation or just to say hello,
+          please send Svetlana an email to{" "}
+          <a
+            href="mailto:s.vento85@gmail.com"
+            className="allura email-link"
+          >
+            s.vento85@gmail.com
+          </a>
         </p>
       </div>
     </div>

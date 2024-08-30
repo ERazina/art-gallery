@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 .allura-regular {
   font-family: "Allura", cursive;
   font-weight: 400;
@@ -8,23 +7,61 @@
   color: #969696 !important;
 }
 
-
-.header{
+.header {
   background-color: white;
   margin: 10px auto;
   padding: 100px 100px 0;
   max-width: 1100px;
 
-  .wrapper{
+  .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
+  .logo {
+    color: #2d2d2d;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 28px;
+    color: #2d2d2d;
+    color: #bfbfbf;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 37.5px 0;
+  }
+
+  .link:hover {
+    text-decoration: none;
+    color: #969696;
+  }
 }
 
-.logo{
-  color: #2d2d2d;
+@media (min-width: 320px) and (max-width: 752px) {
+  .header {
+    background-color: white;
+    margin: 10px auto;
+    padding: 0 20px;
+
+    .allura-regular {
+      font-size: 32px !important;
+    }
+  }
 }
+
+@media (min-width: 753px) and (max-width: 1022px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
 
 ul {
   display: flex;
@@ -33,19 +70,4 @@ ul {
 li {
   list-style-type: none;
   padding: 0 18px;
-}
-
-.link {
-  font-size: 14px;
-  line-height: 28px;
-  // color: #2d2d2d;
-  color: #bfbfbf;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 37.5px 0;
-}
-
-.link:hover {
-  text-decoration: none;
-  color: #969696;
 }

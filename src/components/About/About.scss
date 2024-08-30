@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
 @media (max-width: 752px) {
   .left-block {
     width: 100%;
-    padding: 20px;
   }
   .right-block {
     width: 100%;
@@ -122,3 +123,13 @@
     object-fit: cover;
     object-position: 32% 50%;
   }
+
+
+.allura {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #969696 !important;
+  text-decoration: none;
+}
