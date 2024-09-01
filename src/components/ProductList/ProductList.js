@@ -27,10 +27,7 @@ function ProductList() {
         >
           ABSTRACTION
         </button>
-        <button
-          onClick={() => setGenreFilter("пейзаж")}
-          className="filter-btn"
-        >
+        <button onClick={() => setGenreFilter("пейзаж")} className="filter-btn">
           LANDSCAPE
         </button>
       </div>
@@ -49,6 +46,8 @@ function ProductList() {
                   alt={product.title}
                   id={product.id}
                   loading="lazy"
+                  srcSet={`${product.images[0]} 480w, ${product.images[0]} 720w, ${product.images[0]} 1080w`}
+                  sizes="(max-width: 600px) 480px, (max-width: 900px) 720px, 1080px"
                 />
                 <div className="productTitle">
                   <div className="title">{product.title.toUpperCase()}</div>

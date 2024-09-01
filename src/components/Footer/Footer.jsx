@@ -45,14 +45,6 @@ function Home() {
           >
             <FaInstagram />
           </a>
-          {/* <a
-            href="https://vk.com/slebedeva8"
-            target="_blank"
-            alt="Vkontakte account of Svetlana Lebedeva"
-            className="footer-social__link"
-          >
-            <SlSocialVkontakte />
-          </a> */}
         </div>
       </div>
     </div>
