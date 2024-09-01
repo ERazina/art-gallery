@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import "./Grid.scss";
 import "./Filter.scss";
 
+const imagePath = require.context(
+  "../../assets/images",
+  true,
+  /\.(jpg|jpeg|png|gif|svg|webp)$/
+);
+
 function ProductList() {
   const [genreFilter, setGenreFilter] = useState("all");
 
@@ -42,12 +48,11 @@ function ProductList() {
               >
                 <img
                   className="productImage"
-                  src={product.images[0]}
+                  src={imagePath(`./${product.images[0]}`)}
                   alt={product.title}
                   id={product.id}
                   loading="lazy"
-                  srcSet={`${product.images[0]} 480w, ${product.images[0]} 720w, ${product.images[0]} 1080w`}
-                  sizes="(max-width: 600px) 480px, (max-width: 900px) 720px, 1080px"
+                  srcSet={`${imagePath(`./${product.images[0]}`)} 480w, ${imagePath(`./${product.images[0]}`)} 720w, ${imagePath(`./${product.images[0]}`)} 1080w`}
                 />
                 <div className="productTitle">
                   <div className="title">{product.title.toUpperCase()}</div>
