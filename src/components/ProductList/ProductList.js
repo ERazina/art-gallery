@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { products } from "../../data/products";
 import "./Grid.scss";
 import { Link } from "react-router-dom";
 
 function ProductList() {
-  const [genreFilter, setGenreFilter] = useState("all");
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  // const [genreFilter, setGenreFilter] = useState("all");
+  // const [filteredProducts, setFilteredProducts] = useState(products);
 
-  useEffect(() => {
-    if (!products || products.length === 0) return;
+  // useEffect(() => {
+  //   if (!products || products.length === 0) return;
 
-    if (genreFilter === "all") {
-      setFilteredProducts(products);
-    } else {
-      const filtered = products.filter(
-        (product) => product.genre === genreFilter
-      );
-      setFilteredProducts(filtered);
-    }
-  }, [genreFilter]);
+  //   if (genreFilter === "all") {
+  //     setFilteredProducts(products);
+  //   } else {
+  //     const filtered = products.filter(
+  //       (product) => product.genre === genreFilter
+  //     );
+  //     setFilteredProducts(filtered);
+  //   }
+  // }, [genreFilter]);
 
   return (
     <div className="productList_wrapper">
       <div className="productList">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map((product) => (
+        {products.length > 0 ? (
+          products.map((product) => (
             <Link
               to={`/product/${product.id}`}
               key={product.id}

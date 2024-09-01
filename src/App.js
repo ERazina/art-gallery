@@ -7,9 +7,7 @@ import Footer from "./components/Footer/Footer";
 import { CartProvider } from "./context/CardContext";
 import About from "./components/About/About";
 import Exhibitions from "./components/Exhibitions/Exhibitions";
-import Delivery from "./components/Delivery/Delivery";
 import Contact from "./components/Contact/Contact";
-import Main from "./components/Main/Main";
 import Sea from './components/Sea/Sea'
 import "./App.css";
 function App() {
@@ -22,12 +20,11 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<ProductList />} />
-            {/* <Route path="/gallery" element={<ProductList />} /> */}
+            <Route path="/gallery" element={<ProductList />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/sea" element={<Sea />} />
             <Route path="/about" element={<About />} />
             <Route path="/exhibitions" element={<Exhibitions />} />
-            <Route path="/delivery" element={<Delivery />} />
             <Route path="/contacts" element={<Contact />} />
           </Routes>
           <Footer />

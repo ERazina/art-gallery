@@ -28,6 +28,16 @@ function Nav() {
         </li>
         <li className="list-item">
           <NavLink
+            to="/gallery"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending link" : isActive ? "active link" : "link"
+            }
+          >
+            GALLERY
+          </NavLink>
+        </li>
+        <li className="list-item">
+          <NavLink
             to="/sea"
             className={({ isActive, isPending }) =>
               isPending ? "pending link" : isActive ? "active link" : "link"
