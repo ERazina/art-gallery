@@ -142,14 +142,6 @@ function Exhibitions() {
           <img src="./exh-7.jpg" alt="Svetlana Lebedeva portrait" className="portrait" />
         </div>
       </div>
-      {/* <div className="block-wrapper">
-        <div className="right-block">
-          <img
-            src="./exh-7.jpg"
-            className="portrait"
-            alt="Svetlana Lebedeva portrait"
-          />
-        </div> */}
         <div className="right-block">
           <nav>
             <ul className="list">
