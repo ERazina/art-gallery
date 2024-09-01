@@ -45,11 +45,12 @@ function ProductDetail() {
           </>
         ))}
       </Carousel>
-      <p>{product.description}</p>
-      <p>Price {product.price} RUB</p>
-      <p>Width {product.width} sm</p>
-      <p>Height {product.height} sm</p>
-      <button className="btn">Order painting</button>
+      <p className="image-paragraph">{product.description}</p>
+      <p className="image-paragraph">Price {product.price_en} USD</p>
+      <p className="image-paragraph">Width: {product.width} sm</p>
+      <p className="image-paragraph">Height: {product.height} sm</p>
+      <p className="image-paragraph">Year: {product.year}</p>
+      <button className="order-btn">Order painting</button>
     </div>
   );
 }
