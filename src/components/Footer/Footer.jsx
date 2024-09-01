@@ -15,7 +15,7 @@ function Home() {
     <div className="footer">
       <div className="footer-wrapper">
         <div className="footer-content-wrapper">
-          <div>© Svetlana Lebedeva 2021 - `${currentYear}`</div>
+          <div>© Svetlana Lebedeva 2021 - {currentYear}</div>
           Developed by 
           <a
             href="https://vk.com/razina_elina"
