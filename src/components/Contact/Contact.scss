@@ -2,27 +2,5 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-a[href^="tel:"] {
-  font-size: 20px;
-  line-height: 32px;
-  text-decoration: none;
-  color: #ea4c89;
-}
-
-// a[href^="mailto:"] {
-//   font-size: 20px;
-//   line-height: 32px;
-//     color: #ea4c89;
-// }
-
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact_sl{
-    font-size: 20px;
+  padding: 20px;
 }
