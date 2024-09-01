@@ -49,7 +49,7 @@ function MobileNav() {
             GALLERY
           </NavLink>
           </li>
-        <li onClick={() => setIsVisible(false)} className="list-item">
+        {/* <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/sea"
             className={({ isActive, isPending }) =>
@@ -58,8 +58,8 @@ function MobileNav() {
           >
             SEA
           </NavLink>
-        </li>
-        <li onClick={() => setIsVisible(false)} className="list-item">
+        </li> */}
+        {/* <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/abstaction"
             className={({ isActive, isPending }) =>
@@ -68,8 +68,8 @@ function MobileNav() {
           >
             ABSTACTION
           </NavLink>
-        </li>
-        <li onClick={() => setIsVisible(false)} className="list-item">
+        </li> */}
+        {/* <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/landscape"
             className={({ isActive, isPending }) =>
@@ -78,8 +78,8 @@ function MobileNav() {
           >
             LANDSCAPE
           </NavLink>
-        </li>
-        <li onClick={() => setIsVisible(false)} className="list-item">
+        </li> */}
+        {/* <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/portrait"
             className={({ isActive, isPending }) =>
@@ -88,7 +88,7 @@ function MobileNav() {
           >
             PORTRAIT
           </NavLink>
-        </li>
+        </li> */}
         <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/contacts"

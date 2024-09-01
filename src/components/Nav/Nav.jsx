@@ -36,7 +36,7 @@ function Nav() {
             GALLERY
           </NavLink>
         </li>
-        <li className="list-item">
+        {/* <li className="list-item">
           <NavLink
             to="/sea"
             className={({ isActive, isPending }) =>
@@ -45,8 +45,8 @@ function Nav() {
           >
             SEA
           </NavLink>
-        </li>
-        <li className="list-item">
+        </li> */}
+        {/* <li className="list-item">
           <NavLink
             to="/abstaction"
             className={({ isActive, isPending }) =>
@@ -55,8 +55,8 @@ function Nav() {
           >
             ABSTACTION
           </NavLink>
-        </li>
-        <li className="list-item">
+        </li> */}
+        {/* <li className="list-item">
           <NavLink
             to="/landscape"
             className={({ isActive, isPending }) =>
@@ -65,8 +65,8 @@ function Nav() {
           >
             LANDSCAPE
           </NavLink>
-        </li>
-        <li className="list-item">
+        </li> */}
+        {/* <li className="list-item">
           <NavLink
             to="/portrait"
             className={({ isActive, isPending }) =>
@@ -75,7 +75,7 @@ function Nav() {
           >
             PORTRAIT
           </NavLink>
-        </li>
+        </li> */}
         {/* <li>
           <NavLink
             to="/gallery"
