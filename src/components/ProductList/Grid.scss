@@ -1,0 +1,84 @@
+/* Обертка для всей сетки */
+.productList_wrapper {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1100px; /* Устанавливаем максимальную ширину */
+  }
+  
+  /* Основная сетка для всех брейкпоинтов */
+  .productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Начальное значение, может изменяться на основе медиа-запросов */
+    gap: 10px; /* Отступы между элементами */
+  }
+  
+  /* Квадратные контейнеры */
+  .productLink {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Создает квадратный контейнер */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .productImage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Заполняет квадратный контейнер */
+      transition: opacity 0.3s ease;
+    }
+  
+    .productTitle,
+    .productPrice {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #969696;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    &:hover .productImage {
+      opacity: 0;
+    }
+  
+    &:hover .productTitle,
+    &:hover .productPrice {
+      display: block;
+    }
+  }
+  
+  /* Адаптивные брейкпоинты */
+  @media (min-width: 320px) {
+    .productList {
+      grid-template-columns: repeat(1, 1fr); /* Один квадрат */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .productList {
+      grid-template-columns: repeat(2, 1fr); /* Два квадрата в ряд */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .productList {
+      grid-template-columns: repeat(3, 1fr); /* Три квадрата в ряд */
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .productList {
+      grid-template-columns: repeat(5, 1fr); /* Пять квадратов в ряд */
+    }
+  }
+  

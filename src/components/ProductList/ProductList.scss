@@ -1,279 +1,278 @@
-@media (min-width: 320px) and (max-width: 425px) {
-  .productList {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: "center";
-  }
+// @media (min-width: 320px) and (max-width: 425px) {
+//   .productList {
+//     display: grid;
+//     grid-template-columns: repeat(1, 1fr);
+//     justify-content: "center";
+//   }
 
-  .productList_wrapper {
-    display: grid;
-    justify-content: center;
-    padding: 0 10px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+//   .productList_wrapper {
+//     display: grid;
+//     justify-content: center;
+//     padding: 0 10px;
+//     max-width: 300px;
+//     margin: 0 auto;
+//   }
 
-  .image {
-    max-width: 100%;
-    height: auto;
-  }
-  .productLink {
-    position: relative;
-    display: inline-block;
-    width: 280px;
-    height: 280px;
-    overflow: hidden;
-    background-color: #f0f0f0; // Если картинка не загрузится
-    position: relative;
+//   .image {
+//     max-width: 100%;
+//     height: auto;
+//   }
+//   .productLink {
+//     position: relative;
+//     display: inline-block;
+//     width: 280px;
+//     height: 280px;
+//     overflow: hidden;
+//     background-color: #f0f0f0; // Если картинка не загрузится
+//     position: relative;
 
-    .productImage {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 0.3s ease; // Плавное исчезновение изображения
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+//     .productImage {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       transition: opacity 0.3s ease; // Плавное исчезновение изображения
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//     }
 
-    .productTitle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-      font-size: 14px;
-      font-weight: bold;
-      color: #969696;
-      text-align: center;
-      z-index: 2;
-      font-weight: 100;
-    }
+//     .productTitle {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       display: none;
+//       font-size: 14px;
+//       font-weight: bold;
+//       color: #969696;
+//       text-align: center;
+//       z-index: 2;
+//       font-weight: 100;
+//     }
 
-    .productPrice {
-      display: none;
-      font-size: 14px;
-      color: #969696;
-      text-align: center;
-      z-index: 2;
-      font-weight: 100;
-    }
+//     .productPrice {
+//       display: none;
+//       font-size: 14px;
+//       color: #969696;
+//       text-align: center;
+//       z-index: 2;
+//       font-weight: 100;
+//     }
 
-    &:hover {
-      .productImage {
-        opacity: 0; // Скрываем изображение при наведении
-      }
+//     &:hover {
+//       .productImage {
+//         opacity: 0; // Скрываем изображение при наведении
+//       }
 
-      .productTitle,
-      .productPrice {
-        display: block; // Показываем текст
-      }
-    }
-  }
-  .painting {
-    display: inline-block; /* Чтобы ссылка была блочной */
-    width: 280px;
-    height: 280px;
-    overflow: hidden; /* Чтобы изображение не выходило за границы */
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-  .productList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; /* Центрирует сетку горизонтально */
-    align-items: center; /* Центрирует сетку вертикально */
-    width: max-content;
-
-    justify-items: center; /* Центрирует содержимое ячеек горизонтально */
-    align-items: center; /* Центрирует содержимое ячеек вертикально */
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-  }
-
-  .productList_wrapper {
-    display: grid;
-    justify-content: center;
-    padding: 0 10px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .productLink {
-    position: relative;
-    display: inline-block;
-    width: 280px;
-    height: 280px;
-    overflow: hidden;
-    background-color: #f0f0f0; // Если картинка не загрузится
-    position: relative;
-
-    .productImage {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 0.3s ease; // Плавное исчезновение изображения
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .productTitle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-      font-size: 14px;
-      font-weight: bold;
-      color: #969696;
-      text-align: center;
-      z-index: 2;
-      font-weight: 100;
-    }
-
-    .productPrice {
-      display: none;
-      font-size: 14px;
-      color: #969696;
-      text-align: center;
-      z-index: 2;
-      font-weight: 100;
-    }
-
-    &:hover {
-      .productImage {
-        opacity: 0; // Скрываем изображение при наведении
-      }
-
-      .productTitle,
-      .productPrice {
-        display: block; // Показываем текст
-      }
-    }
-  }
-  .painting {
-    display: inline-block; /* Чтобы ссылка была блочной */
-    width: 280px;
-    height: 280px;
-    overflow: hidden; /* Чтобы изображение не выходило за границы */
-  }
-}
-
-// .productList {
-//   display: grid;
-//   grid-template-columns: repeat(5, 1fr);
-//   justify-content: "center";
+//       .productTitle,
+//       .productPrice {
+//         display: block; // Показываем текст
+//       }
+//     }
+//   }
+//   .painting {
+//     display: inline-block; /* Чтобы ссылка была блочной */
+//     width: 280px;
+//     height: 280px;
+//     overflow: hidden; /* Чтобы изображение не выходило за границы */
+//   }
 // }
-// .productList_wrapper {
-//   display: grid;
+
+// @media (min-width: 426px) and (max-width: 768px) {
+//   .productList {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     justify-content: center; /* Центрирует сетку горизонтально */
+//     align-items: center; /* Центрирует сетку вертикально */
+//     width: max-content;
+
+//     justify-items: center; /* Центрирует содержимое ячеек горизонтально */
+//     align-items: center; /* Центрирует содержимое ячеек вертикально */
+//     width: 100%;
+//     margin: auto;
+//   }
+
+//   .productList_wrapper {
+//     display: grid;
+//     justify-content: center;
+//     padding: 0 10px;
+//     max-width: 100%;
+//     margin: 0 auto;
+//   }
+
+//   .productLink {
+//     position: relative;
+//     display: inline-block;
+//     width: 280px;
+//     height: 280px;
+//     overflow: hidden;
+//     background-color: #f0f0f0; // Если картинка не загрузится
+//     position: relative;
+
+//     .productImage {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       transition: opacity 0.3s ease; // Плавное исчезновение изображения
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//     }
+
+//     .productTitle {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       display: none;
+//       font-size: 14px;
+//       font-weight: bold;
+//       color: #969696;
+//       text-align: center;
+//       z-index: 2;
+//       font-weight: 100;
+//     }
+
+//     .productPrice {
+//       display: none;
+//       font-size: 14px;
+//       color: #969696;
+//       text-align: center;
+//       z-index: 2;
+//       font-weight: 100;
+//     }
+
+//     &:hover {
+//       .productImage {
+//         opacity: 0; // Скрываем изображение при наведении
+//       }
+
+//       .productTitle,
+//       .productPrice {
+//         display: block; // Показываем текст
+//       }
+//     }
+//   }
+//   .painting {
+//     display: inline-block; /* Чтобы ссылка была блочной */
+//     width: 280px;
+//     height: 280px;
+//     overflow: hidden; /* Чтобы изображение не выходило за границы */
+//   }
+// }
+
+// // .productList {
+// //   display: grid;
+// //   grid-template-columns: repeat(5, 1fr);
+// //   justify-content: "center";
+// // }
+// // .productList_wrapper {
+// //   display: grid;
+// //   justify-content: center;
+// //   padding: 0 100px;
+// //   max-width: 1100px;
+// //   margin: 0 auto;
+// // }
+
+// .painting img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover; /* Чтобы изображение покрывало весь размер ссылки */
+// }
+
+// .filter_wrapper {
+//   display: flex;
+//   align-items: center;
 //   justify-content: center;
-//   padding: 0 100px;
-//   max-width: 1100px;
-//   margin: 0 auto;
+
+//   button {
+//     margin: 20px;
+//   }
 // }
 
-.painting img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Чтобы изображение покрывало весь размер ссылки */
-}
+// .productLink {
+//   // position: relative;
+//   // display: inline-block;
+//   // width: 220px;
+//   // height: 220px;
+//   // overflow: hidden;
+//   // background-color: #f0f0f0; // Если картинка не загрузится
+//   // position: relative;
 
-.filter_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+//   .productImage {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: opacity 0.3s ease; // Плавное исчезновение изображения
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//   }
 
-  button {
-    margin: 20px;
-  }
-}
+//   .productTitle {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: none;
+//     font-size: 14px;
+//     font-weight: bold;
+//     color: #969696;
+//     text-align: center;
+//     z-index: 2;
+//     font-weight: 100;
+//   }
 
-.productLink {
-  // position: relative;
-  // display: inline-block;
-  // width: 220px;
-  // height: 220px;
-  // overflow: hidden;
-  // background-color: #f0f0f0; // Если картинка не загрузится
-  // position: relative;
+//   .productPrice {
+//     display: none;
+//     font-size: 14px;
+//     color: #969696;
+//     text-align: center;
+//     z-index: 2;
+//     font-weight: 100;
+//   }
 
-  .productImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease; // Плавное исчезновение изображения
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+//   &:hover {
+//     .productImage {
+//       opacity: 0; // Скрываем изображение при наведении
+//     }
 
-  .productTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #969696;
-    text-align: center;
-    z-index: 2;
-    font-weight: 100;
-  }
+//     .productTitle,
+//     .productPrice {
+//       display: block; // Показываем текст
+//     }
+//   }
+// }
 
-  .productPrice {
-    display: none;
-    font-size: 14px;
-    color: #969696;
-    text-align: center;
-    z-index: 2;
-    font-weight: 100;
-  }
+// .btn {
+//   padding: 12px 24px; /* Более компактный padding */
+//   border-radius: 50px; /* Закругленные края для стильного вида */
+//   border: none;
+//   background: linear-gradient(
+//     135deg,
+//     #f5f7fa,
+//     #c3cfe2
+//   ); /* Нежный градиентный фон */
+//   color: #333; /* Тёмный текст для контраста */
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   letter-spacing: 1px;
+//   cursor: pointer;
+//   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Легкая тень для объёма */
+//   transition: all 0.3s ease; /* Плавный переход для эффектов */
+// }
 
-  &:hover {
-    .productImage {
-      opacity: 0; // Скрываем изображение при наведении
-    }
+// .btn:hover {
+//   background: linear-gradient(
+//     135deg,
+//     #e3e9ef,
+//     #a7b9c6
+//   ); /* Градиент изменяется при наведении */
+//   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); /* Увеличиваем тень при наведении */
+//   transform: translateY(-3px); /* Лёгкое поднятие кнопки при наведении */
+// }
 
-    .productTitle,
-    .productPrice {
-      display: block; // Показываем текст
-    }
-  }
-}
-
-.btn {
-  padding: 12px 24px; /* Более компактный padding */
-  border-radius: 50px; /* Закругленные края для стильного вида */
-  border: none;
-  background: linear-gradient(
-    135deg,
-    #f5f7fa,
-    #c3cfe2
-  ); /* Нежный градиентный фон */
-  color: #333; /* Тёмный текст для контраста */
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Легкая тень для объёма */
-  transition: all 0.3s ease; /* Плавный переход для эффектов */
-}
-
-.btn:hover {
-  background: linear-gradient(
-    135deg,
-    #e3e9ef,
-    #a7b9c6
-  ); /* Градиент изменяется при наведении */
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); /* Увеличиваем тень при наведении */
-  transform: translateY(-3px); /* Лёгкое поднятие кнопки при наведении */
-}
-
-.btn:active {
-  transform: translateY(1px); /* Кнопка слегка опускается при клике */
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Уменьшение тени при клике */
-}
+// .btn:active {
+//   transform: translateY(1px); /* Кнопка слегка опускается при клике */
+//   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Уменьшение тени при клике */
+// }

@@ -21,7 +21,7 @@ function App() {
         > */}
           <Header />
           <Routes>
-            <Route path="/" element={<About />} />
+            <Route path="/" element={<ProductList />} />
             {/* <Route path="/gallery" element={<ProductList />} /> */}
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/sea" element={<Sea />} />
