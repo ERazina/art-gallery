@@ -134,8 +134,9 @@ function Exhibitions() {
   //   const { t } = useTranslation();
   //   const [storedValue, setValue] = UseLocalStorage("language", "ru");
   return (
-    <div className="about">
+    <div className="exhibitions">
       <h2 className="heading">Exhibitions</h2>
+      <div className="about">
       <div className="left-block">
         <div className="portrait-wrapper">
           <img src="./exh-7.jpg" alt="Svetlana Lebedeva portrait" className="portrait" />
@@ -151,15 +152,16 @@ function Exhibitions() {
         </div> */}
         <div className="right-block">
           <nav>
-            <ul>
+            <ul className="list">
               {exhibitionsList.map((item) => (
-                <li>
+                <li className="list-item">
                   {item.year} - {item.name} - {item.place}
                 </li>
               ))}
             </ul>
           </nav>
         </div>
+    </div>
     </div>
   );
 }
