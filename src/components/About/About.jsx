@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.scss";
+import "../commonStyles/commonStyles.scss";
 
 function About() {
   //   const { t } = useTranslation();

@@ -1,8 +1,7 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaBehance } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 // import { useTranslation } from "react-i18next";
 // import UseLocalStorage from "../../hooks/UseLocalStorage";
-import { FaTelegram } from "react-icons/fa6";
 import { PiTelegramLogo } from "react-icons/pi";
 
 import "./Footer.scss";
@@ -10,11 +9,13 @@ import "./Footer.scss";
 function Home() {
   //   const { t } = useTranslation();
   //   const [storedValue, setValue] = UseLocalStorage("language", "ru");
+
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer">
       <div className="footer-wrapper">
         <div className="footer-content-wrapper">
-          <div>© Svetlana Lebedeva 2024</div>
+          <div>© Svetlana Lebedeva 2021 - `${currentYear}`</div>
           Developed by 
           <a
             href="https://vk.com/razina_elina"

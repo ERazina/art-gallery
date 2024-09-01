@@ -19,7 +19,7 @@ function MobileNav() {
     <nav className="MobileNavigation">
       {Hamburger}
       <ul className={isVisible ? "NavLinks visible" : "NavLinks hidden "}>
-        <li onClick={() => setIsVisible(false)}>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/about"
             className={({ isActive, isPending }) =>
@@ -29,7 +29,7 @@ function MobileNav() {
             ABOUT
           </NavLink>
         </li>
-        <li onClick={() => setIsVisible(false)}>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/exhibitions"
             className={({ isActive, isPending }) =>
@@ -39,7 +39,7 @@ function MobileNav() {
             EXHIBITIONS
           </NavLink>
         </li>
-        <li>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/sea"
             className={({ isActive, isPending }) =>
@@ -49,7 +49,7 @@ function MobileNav() {
             SEA
           </NavLink>
         </li>
-        <li>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/abstaction"
             className={({ isActive, isPending }) =>
@@ -59,7 +59,7 @@ function MobileNav() {
             ABSTACTION
           </NavLink>
         </li>
-        <li>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/landscape"
             className={({ isActive, isPending }) =>
@@ -69,7 +69,7 @@ function MobileNav() {
             LANDSCAPE
           </NavLink>
         </li>
-        <li>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/portrait"
             className={({ isActive, isPending }) =>
@@ -79,7 +79,7 @@ function MobileNav() {
             PORTRAIT
           </NavLink>
         </li>
-        <li onClick={() => setIsVisible(false)}>
+        <li onClick={() => setIsVisible(false)} className="list-item">
           <NavLink
             to="/contacts"
             className={({ isActive, isPending }) =>

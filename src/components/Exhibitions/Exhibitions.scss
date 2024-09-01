@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 752px) {
+  .exhibitions {
+    font-size: 14px;
+  }
   .block-wrapper {
     display: flex;
     flex-direction: column;
@@ -60,6 +63,9 @@
 }
 
 @media (min-width: 753px) and (max-width: 1024px) {
+  .exhibitions{
+    font-size: 18px;
+  }
   .left-block,
   .right-block {
     width: 50%;

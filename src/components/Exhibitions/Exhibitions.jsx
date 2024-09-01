@@ -1,4 +1,5 @@
 import React from "react";
+import "../commonStyles/commonStyles.scss";
 import "./Exhibitions.scss";
 
 const exhibitionsList = [
@@ -129,40 +130,26 @@ const exhibitionsList = [
   },
 ];
 
-
-
-
-
 function Exhibitions() {
   //   const { t } = useTranslation();
   //   const [storedValue, setValue] = UseLocalStorage("language", "ru");
   return (
-    <div className="exhibitions">
+    <div className="about">
       <h2 className="heading">Exhibitions</h2>
-      <div className="block-wrapper">
-        {/* <h2 className="heading">Exhibitions</h2> */}
-        <div className="right-block">
-          <img src="./exh-7.jpg" className="exb" alt="" />
-          {/* <img src="./exh-6.jpg" alt="" />
-        <img src="./exh-4.jpg" alt="" />
-        <img src="./exh-9.jpg" alt="" />
-          <img src="./exh-1.jpg" alt="" />
-          <img src="./exh-2.jpg" alt="" />
-          <img src="./exh-3.jpg" alt="" />
-
-          <img src="./exh-5.jpg" alt="" />
-
-
-
-
-          <img src="./exh-10.jpg" alt="" />
-          <img src="./1.jpg" alt="" />
-          <img src="./IMG_9063_1.jpg" alt="" />
-          <img src="./IMG_7981.jpg" alt="" />
-          <img src="./IMG_9058.jpg" alt="" /> */}
-          {/* <img src="./IMG_7981.jpg" alt="" /> */}
+      <div className="left-block">
+        <div className="portrait-wrapper">
+          <img src="./exh-7.jpg" alt="Svetlana Lebedeva portrait" className="portrait" />
         </div>
-        <div className="left-block">
+      </div>
+      {/* <div className="block-wrapper">
+        <div className="right-block">
+          <img
+            src="./exh-7.jpg"
+            className="portrait"
+            alt="Svetlana Lebedeva portrait"
+          />
+        </div> */}
+        <div className="right-block">
           <nav>
             <ul>
               {exhibitionsList.map((item) => (
@@ -173,7 +160,6 @@ function Exhibitions() {
             </ul>
           </nav>
         </div>
-      </div>
     </div>
   );
 }

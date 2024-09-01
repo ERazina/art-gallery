@@ -1,31 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { products } from "../../data/products";
 import "./Nav.scss";
 
 function Nav() {
-  const [genreFilter, setGenreFilter] = useState("all");
-  const [filteredProducts, setFilteredProducts] = useState(products);
-
-  // Функция фильтрации
-  useEffect(() => {
-    // Проверяем, что продукты загружены и фильтр применен корректно
-    if (!products || products.length === 0) return;
-
-    if (genreFilter === "all") {
-      setFilteredProducts(products);
-    } else {
-      const filtered = products.filter(
-        (product) => product.genre === genreFilter
-      );
-      setFilteredProducts(filtered);
-    }
-  }, [genreFilter]);
-
   return (
     <nav className="desktopNav">
       <ul>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/about"
             className={({ isActive, isPending }) =>
@@ -35,7 +16,7 @@ function Nav() {
             ABOUT
           </NavLink>
         </li>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/exhibitions"
             className={({ isActive, isPending }) =>
@@ -45,7 +26,7 @@ function Nav() {
             EXHIBITIONS
           </NavLink>
         </li>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/sea"
             className={({ isActive, isPending }) =>
@@ -55,7 +36,7 @@ function Nav() {
             SEA
           </NavLink>
         </li>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/abstaction"
             className={({ isActive, isPending }) =>
@@ -65,7 +46,7 @@ function Nav() {
             ABSTACTION
           </NavLink>
         </li>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/landscape"
             className={({ isActive, isPending }) =>
@@ -75,7 +56,7 @@ function Nav() {
             LANDSCAPE
           </NavLink>
         </li>
-        <li>
+        <li className="list-item">
           <NavLink
             to="/portrait"
             className={({ isActive, isPending }) =>
@@ -95,7 +76,7 @@ function Nav() {
             GALLERY
           </NavLink>
         </li> */}
-        <li>
+        <li className="list-item">
           <NavLink
             to="/contacts"
             className={({ isActive, isPending }) =>
